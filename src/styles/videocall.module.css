@@ -1,0 +1,173 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header p {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.form {
+  padding: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.formGroup small {
+  display: block;
+  margin-top: 0.3rem;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+}
+
+.features {
+  padding: 2rem;
+  background: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.features h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.instructions {
+  padding: 2rem;
+}
+
+.instructions h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.instructions ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+.instructions li {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0;
+  }
+
+  .card {
+    border-radius: 0;
+  }
+
+  .header {
+    padding: 1.5rem 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .form,
+  .features,
+  .instructions {
+    padding: 1.5rem 1rem;
+  }
+}
